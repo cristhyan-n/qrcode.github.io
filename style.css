@@ -2,8 +2,56 @@ body {
   margin: 0;
   padding: 0;
   max-width: 1440px;
+  font-family: "Outfit";
+  background-color: hsl(219, 100%, 90%);
+  box-sizing: border-box;
 }
 
 h1 {
   margin: 0;
+  font-weight: 700;
+  max-width: 18ch;
+  text-align: center;
+}
+
+p {
+  font-size: 15px;
+  max-width: 25ch;
+  text-align: center;
+}
+
+.qr-code {
+  display: grid;
+  grid-template-columns: auto;
+  align-items: center;
+  justify-items: center;
+  max-width: max-content;
+  padding: 20px;
+  margin: 100px auto;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+}
+
+.qr-code img {
+  display: block;
+  max-width: 400px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 375px) {
+  body {
+    max-width: 375px;
+    padding: 20px;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 14px;
+  }
+  .qr-code img {
+    max-width: 280px;
+    margin-bottom: 20px;
+  }
 }
